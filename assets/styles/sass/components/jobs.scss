@@ -1,0 +1,140 @@
+.jobs {
+  margin: ($margin * 3) 0 ($margin * 3);
+
+  &-carousel {
+    margin: 0 (-$margin * 2) (-$margin * 2);
+    position: relative;
+
+    @media(max-width:1100px) {
+      margin: 0 (-$margin) (-$margin * 2);
+    }
+
+    &-content {
+      background: $color-white;
+      padding: $padding * 2;
+      position: absolute;
+      top: 35%;
+      width: 37%;
+
+      @media(max-width:991px) {
+        background: $color-base-light;
+        position: static;
+        width: auto;
+      }
+    }
+
+    &-headline {
+      font-size: $font-size-10;
+      margin: 0 0 ($margin * 1.5);
+
+      @media(max-width:767px) {
+        font-size: $font-size-7;
+        margin: 0 0 $margin;
+      }
+    }
+  }
+
+
+  .whr {
+    &-group {
+      font-size: $font-size-8;
+      margin: ($margin * 2) 0;
+    }
+
+    &-items {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    &-item {
+      border-top: $border-size solid $color-border;
+      display: block;
+      padding: ($padding * 2) $padding;
+
+      &:hover {
+        border-top: $border-size solid transparent;
+        background: $color-white;
+        -webkit-box-shadow: 0px 7px 50px 0px rgba(0,0,0,0.1);
+        -moz-box-shadow: 0px 7px 50px 0px rgba(0,0,0,0.1);
+        box-shadow: 0px 7px 50px 0px rgba(0,0,0,0.1);
+        text-decoration: none;
+      }
+    }
+
+    &-title {
+      margin: 0;
+
+      a {
+        color: $color-font;
+        position: relative;
+
+        &:after {
+          font-family: 'myicons';
+          font-size: $font-size-1;
+          content: '\ea05';
+          right: -18px;
+          position: absolute;
+          top: 2px;
+        }
+
+        &:hover {
+          color: $color-red;
+          text-decoration: none;
+        }
+      }
+    }
+
+    &-info {
+      list-style: none;
+      margin: ($margin * .5) 0 0 0;
+      padding: 0;
+      text-align: left;
+
+      li {
+        display: inline-block;
+        color: $color-font-light;
+        margin-right: $margin * 2;
+        position: relative;
+
+        &:after {
+          background: $color-base;
+          border-radius: 50%;
+          display: inline-block;
+          content: '';
+          height: 5px;
+          right: -18px;
+          position: absolute;
+          top: 5px;
+          width: 5px;
+        }
+
+        &:last-child {
+          margin-right: 0;
+
+          &:after {
+            display: none;
+          }
+        }
+      }
+    }
+
+    &-location {
+      padding-left: 18px;
+      position: relative;
+
+      span {
+        display: none;
+      }
+
+      &:before {
+        font-family: 'myicons';
+        content: '\ea02';
+        left: 0;
+        position: absolute;
+        top: -3px;
+      }
+    }
+  }
+
+}

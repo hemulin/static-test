@@ -1,0 +1,153 @@
+.grid {
+	display: block;
+	position: relative;
+
+	&-grey {
+		background: $color-base-light;
+	}
+
+	&-inner {
+		@media(max-height:500px) {
+			min-height: 400px;
+		}
+	}
+
+	@media(max-width:1100px) {
+		display: block;
+		width: 100%;
+	}
+
+	&-7 {
+		width: 70%;
+
+		@media(max-width:1100px) {
+			width: 100%;
+		}
+	}
+
+	&-5 {
+		width: 50%;
+
+		@media(max-width:1100px) {
+			width: 100%;
+		}
+	}
+
+	&-4 {
+		width: 40%;
+
+		@media(max-width:1100px) {
+			width: 100%;
+		}
+	}
+
+	&-3 {
+		width: 30%;
+
+		@media(max-width:1100px) {
+			width: 100%;
+		}
+	}
+
+	&-2 {
+		width: 20%;
+
+		@media(max-width:1100px) {
+			width: 100%;
+		}
+	}
+
+	&-1 {
+		width: 10%;
+
+		@media(max-width:1100px) {
+			width: 100%;
+		}
+	}
+
+	&-fh {
+		height: 100vh;
+
+		@media(max-width:1100px) {
+			height: auto;
+		}
+
+		@media(max-height:500px) {
+			height: auto;
+			overflow-y: auto;
+		}
+
+		&-min {
+			min-height: 100vh;
+
+			@media(max-width:1100px) {
+				min-height: auto;
+			}
+
+			@media(max-height:500px) {
+				min-height: auto;
+			}
+		}
+	}
+
+	&-fix {
+		position: fixed;
+		top: 0;
+
+		@media(max-width:1100px) {
+			position: static;
+		}
+	}
+
+	&-push {
+
+		&-2 {
+			left: 20%;
+
+			@media(max-width:1100px) {
+				left: 0;
+			}
+		}
+
+		&-3 {
+			left: 30%;
+
+			@media(max-width:1100px) {
+				left: 0;
+			}
+		}
+
+		&-4 {
+			left: 40%;
+
+			@media(max-width:1100px) {
+				left: 0;
+			}
+		}
+
+		&-6 {
+			left: 60%;
+
+			@media(max-width:1100px) {
+				left: 0;
+			}
+		}
+
+		&-7 {
+			left: 70%;
+
+			@media(max-width:1100px) {
+				left: 0;
+			}
+		}
+
+		&-8 {
+			left: 80%;
+
+			@media(max-width:1100px) {
+				left: 0;
+			}
+		}
+	}
+
+}

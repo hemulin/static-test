@@ -1,0 +1,57 @@
+---
+layout: default
+---
+
+<section class="grid grid-1 grid-push-2 grid-fh grid-fix">
+  <div class="title">
+    <h2 class="title-headline">projects.</h2>
+  </div>
+</section>
+<section class="grid grid-3 grid-push-7 grid-fh grid-fix">
+    <div class="content-inner projects-detail">
+      <div class="projects-logo-wrapper">
+        <img class="projects-logo" src="{{ site.baseurl }}{{page.logo}}" width="" height="" />
+      </div>
+      <div class="projects-info">
+        <h3 class="projects-title">{{page.name}}</h3>
+        <ul class="projects-info-list">
+          <li class="projects-info-item">
+            <span class="projects-info-label">Status:</span>
+            <span class="projects-info-status online">{{page.status}}</span>
+          </li>
+          <li class="projects-info-item">
+            <span class="projects-info-label">Link:</span>
+            <a href="{{page.external_link}}" title="Visit website" target="_blank">{{page.external_link_view}}</a>
+          </li>
+          <li class="projects-info-item">
+            <span class="projects-info-label">Contact:</span>
+            <a href="{{page.contact_link}}" title="Get in touch" target="_blank">{{page.contact_name}}</a>
+          </li>
+        </ul>
+        <a class="button" href="{{page.external_link}}" title="Visit website" target="_blank">Visit website</a>
+      </div>
+    </div>
+  </section>
+  <section class="grid grid-4 grid-push-3 grid-fh-min grid-grey">
+    <div class="content-inner projects-inner">
+      <div class="projects-back">
+        <a href="../projects.html" title="Back">
+          <i class="a-icon a-tail-left"></i> Project overview</a>
+        </div>
+      <h1 class="content-subline">{{ page.headline }}</h1>
+      {% if page.video_link %}
+      <div class="responsiveContainer content-media">
+        <iframe width="560" height="315" src="{{page.video_link}}" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      </div>
+      {% else %}
+      <div class="content-media">
+        <img class="content-image" src="{{ site.baseurl }}{{page.image}}" width="" height="" />
+      </div>
+      {% endif %}
+      <p>{{page.description_inner}}</p>
+    </div>
+  </section>
+
+<div class="content">
+  {{ content }}
+</div>

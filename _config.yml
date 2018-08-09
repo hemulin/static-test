@@ -1,0 +1,9 @@
+baseurl: "/"
+collections:
+  events:
+    output: false
+  teammemebers:
+    output: false
+  projects:
+    output: true
+    permalink: /projects/:name

@@ -1,0 +1,118 @@
+.text {
+
+	&center {
+		text-align: center;
+	}
+
+	&left {
+		text-align: left;
+	}
+
+	&right {
+		text-align: right;
+	}
+}
+
+.left {
+	float: left;
+}
+
+.right {
+	float: right;
+}
+
+.col {
+
+	&-right {
+		float: right;
+
+		@media(max-width:767px) {
+			float: none;
+		}
+	}
+
+	&-left {
+		float: left;
+
+		@media(max-width:767px) {
+			float: none;
+		}
+	}
+}
+
+.red {
+	color: $color-red;
+}
+
+.margin {
+	margin: $margin;
+
+	&-top { margin-top: $margin !important; }
+	&-right { margin-right: $margin !important; }
+	&-bottom { margin-bottom: $margin !important; }
+	&-left { margin-left: $margin !important; }
+}
+
+.padding {
+	padding: $padding;
+
+	&-top { padding-top: $padding !important; }
+	&-right { padding-right: $padding !important; }
+	&-bottom { padding-bottom: $padding !important; }
+	&-left { padding-left: $padding !important; }
+}
+
+.responsiveContainer {
+	height: 0;
+  padding-bottom: 56%;
+  position: relative;
+  overflow: hidden;
+
+  iframe {
+  	height: 100%;
+  	left: 0;
+	  position: absolute;
+	  top: 0;
+	  width: 100%;
+	}
+}
+
+.image {
+
+	&-left {
+		margin: $margin $margin $margin 0;
+		float: left;
+		display: block;
+	}
+
+	&-right {
+		margin: $margin 0 $margin $margin;
+		float: right;
+	}
+
+	&-center {
+		margin: $margin auto;
+		display: block;
+	}
+
+	&-rounded {
+		border-radius: 50%;
+		border: $border-size-big solid $color-base;
+	}
+
+	&-fullwidth {
+		display: block;
+		width: 100%;
+		height: auto;
+	}
+
+	@media(max-width:767px) {
+		&-mobile {
+			display: block;
+			width: 60%;
+			height: auto;
+			margin: 0 auto;
+			max-width: 200px;
+		}
+	}
+}

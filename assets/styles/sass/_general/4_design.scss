@@ -1,0 +1,80 @@
+/* -------------------------- *
+* RESET
+* -------------------------- */
+
+*:focus {
+	outline: 0;
+}
+
+* { -webkit-tap-highlight-color:transparent; }
+
+textarea, select, input.form-input {
+	-webkit-appearance: none;
+	border-radius: 0;
+	-webkit-border-radius:0;
+}
+
+
+/* -------------------------- *
+* STYLES
+* -------------------------- */
+
+body {
+	background: $color-white;
+	font-family: 'Tajawal', sans-serif;
+	font-size: $font-size-3;
+	line-height: $line-height;
+	overflow-x: hidden;
+}
+
+.wrapper_margins {
+	height: 100vh;
+	position: relative;
+
+	@media(max-width:1100px) {
+		padding-top: 60px;
+	}
+}
+
+img {
+	display: block;
+}
+
+a {
+	transition: all .2s;
+	-moz-transition: all .2s;
+	-webkit-transition: all .2s;
+	color:$color-link;
+
+	&:hover {
+		color:$color-link;
+		text-decoration: underline;
+	}
+
+	&:visited, &:focus, &:active {
+		text-decoration: none;
+	}
+
+}
+
+p {
+	color: $color-font-semilight;
+	margin: ($margin / 2.5) 0;
+}
+
+blockquote {
+	border: 0;
+	font-style: italic;
+	font-size: $font-size-2;
+	margin: ($margin / 2) 0;
+	padding: 0;
+}
+
+hr {
+	border-top: $border-size solid $color-base;
+	margin: ($margin * 2) 0;
+}
+
+strong {
+	font-weight: $font-weight-bold;
+}

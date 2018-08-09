@@ -1,0 +1,21 @@
+---
+layout: default
+title: Blog
+---
+
+<section class="grid grid-1 grid-push-2 grid-fh grid-fix">
+  <div class="title">
+    <h2 class="title-headline">blog.</h2>
+  </div>
+</section>
+
+<section class="grid grid-7 grid-push-3">
+  <div class="content-inner">
+    <h1 class="content-headline">what's new<span class="red">.</span></h1>
+    <div class="blog">
+      <div id="medium-widget"></div>
+      <script src="https://medium-widget.pixelpoint.io/widget.js"></script>
+      <script>MediumWidget.Init({renderTo: '#medium-widget', params: {"resource":"https://medium.com/@amatus","postsPerLine":1,"limit":6,"picture":"big","fields":["description","author","claps","publishAt"],"ratio":"landscape"}})</script>
+    </div>
+  </div>
+</section>

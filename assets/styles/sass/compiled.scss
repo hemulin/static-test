@@ -1,0 +1,22 @@
+@import '_general/1_colors.scss';
+@import '_general/2_metrics.scss';
+@import '_general/3_fonts.scss';
+@import '_general/4_design.scss';
+@import '_general/5_helper.scss';
+@import '_general/6_grid.scss';
+
+@import 'atoms/button.scss';
+
+@import 'components/carousel.scss';
+@import 'components/events.scss';
+@import 'components/navigation.scss';
+@import 'components/jobs.scss';
+@import 'components/projects.scss';
+@import 'components/social.scss';
+
+@import 'partials/about.scss';
+@import 'partials/content.scss';
+@import 'partials/footer.scss';
+@import 'partials/header.scss';
+@import 'partials/home.scss';
+@import 'partials/title.scss';

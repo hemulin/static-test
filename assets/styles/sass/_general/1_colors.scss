@@ -1,0 +1,121 @@
+/* -------------------------- *
+* WHITE
+* -------------------------- */
+$color-white: #ffffff;
+$color-white-90: rgba($color-white, 0.9);
+$color-white-80: rgba($color-white, 0.8);
+$color-white-70: rgba($color-white, 0.7);
+$color-white-60: rgba($color-white, 0.6);
+$color-white-50: rgba($color-white, 0.5);
+$color-white-40: rgba($color-white, 0.4);
+$color-white-30: rgba($color-white, 0.3);
+$color-white-20: rgba($color-white, 0.2);
+$color-white-10: rgba($color-white, 0.1);
+
+/* -------------------------- *
+* BLACK
+* -------------------------- */
+$color-black: #000000;
+$color-black-90: rgba($color-black, 0.9);
+$color-black-80: rgba($color-black, 0.8);
+$color-black-70: rgba($color-black, 0.7);
+$color-black-60: rgba($color-black, 0.6);
+$color-black-50: rgba($color-black, 0.5);
+$color-black-40: rgba($color-black, 0.4);
+$color-black-30: rgba($color-black, 0.3);
+$color-black-20: rgba($color-black, 0.2);
+$color-black-10: rgba($color-black, 0.1);
+
+/* -------------------------- *
+* RED
+* -------------------------- */
+$color-red: #ff0002;
+$color-red-90: rgba($color-red, 0.9);
+$color-red-80: rgba($color-red, 0.8);
+$color-red-70: rgba($color-red, 0.7);
+$color-red-60: rgba($color-red, 0.6);
+$color-red-50: rgba($color-red, 0.5);
+$color-red-40: rgba($color-red, 0.4);
+$color-red-30: rgba($color-red, 0.3);
+$color-red-20: rgba($color-red, 0.2);
+$color-red-10: rgba($color-red, 0.1);
+
+/* -------------------------- *
+* BASE
+* -------------------------- */
+
+/* BASE-DARK */
+$color-base-dark: #555555;
+$color-base-dark-90: rgba($color-base-dark, 0.9);
+$color-base-dark-80: rgba($color-base-dark, 0.8);
+$color-base-dark-70: rgba($color-base-dark, 0.7);
+$color-base-dark-60: rgba($color-base-dark, 0.6);
+$color-base-dark-50: rgba($color-base-dark, 0.5);
+$color-base-dark-40: rgba($color-base-dark, 0.4);
+$color-base-dark-30: rgba($color-base-dark, 0.3);
+$color-base-dark-20: rgba($color-base-dark, 0.2);
+$color-base-dark-10: rgba($color-base-dark, 0.1);
+
+/* BASE-SEMIDARK */
+$color-base-semidark: #bababa;
+$color-base-semidark-90: rgba($color-base-semidark, 0.9);
+$color-base-semidark-80: rgba($color-base-semidark, 0.8);
+$color-base-semidark-70: rgba($color-base-semidark, 0.7);
+$color-base-semidark-60: rgba($color-base-semidark, 0.6);
+$color-base-semidark-50: rgba($color-base-semidark, 0.5);
+$color-base-semidark-40: rgba($color-base-semidark, 0.4);
+$color-base-semidark-30: rgba($color-base-semidark, 0.3);
+$color-base-semidark-20: rgba($color-base-semidark, 0.2);
+$color-base-semidark-10: rgba($color-base-semidark, 0.1);
+
+/* BASE */
+$color-base: #d7d7d7;
+$color-base-90: rgba($color-base, 0.9);
+$color-base-80: rgba($color-base, 0.8);
+$color-base-70: rgba($color-base, 0.7);
+$color-base-60: rgba($color-base, 0.6);
+$color-base-50: rgba($color-base, 0.5);
+$color-base-40: rgba($color-base, 0.4);
+$color-base-30: rgba($color-base, 0.3);
+$color-base-20: rgba($color-base, 0.2);
+$color-base-10: rgba($color-base, 0.1);
+
+/* BASE-SEMILIGHT */
+$color-base-semilight: #ebebeb;
+$color-base-semilight-90: rgba($color-base-semilight, 0.9);
+$color-base-semilight-80: rgba($color-base-semilight, 0.8);
+$color-base-semilight-70: rgba($color-base-semilight, 0.7);
+$color-base-semilight-60: rgba($color-base-semilight, 0.6);
+$color-base-semilight-50: rgba($color-base-semilight, 0.5);
+$color-base-semilight-40: rgba($color-base-semilight, 0.4);
+$color-base-semilight-30: rgba($color-base-semilight, 0.3);
+$color-base-semilight-20: rgba($color-base-semilight, 0.2);
+$color-base-semilight-10: rgba($color-base-semilight, 0.1);
+
+/* BASE-LIGHT */
+$color-base-light: #f8f8f8;
+$color-base-light-90: rgba($color-base-light, 0.9);
+$color-base-light-80: rgba($color-base-light, 0.8);
+$color-base-light-70: rgba($color-base-light, 0.7);
+$color-base-light-60: rgba($color-base-light, 0.6);
+$color-base-light-50: rgba($color-base-light, 0.5);
+$color-base-light-40: rgba($color-base-light, 0.4);
+$color-base-light-30: rgba($color-base-light, 0.3);
+$color-base-light-20: rgba($color-base-light, 0.2);
+$color-base-light-10: rgba($color-base-light, 0.1);
+
+/* -------------------------- *
+* USE CASE
+* -------------------------- */
+
+$color-font: $color-black;
+$color-font-semilight: $color-base-dark;
+$color-font-light: $color-base-semidark;
+$color-link: $color-red;
+
+$color-border: $color-base-light;
+$color-border-dark: $color-base-semilight;
+
+$color-success: #8eb71f;
+$color-pending: #ffc000;
+$color-error: $color-red;

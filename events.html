@@ -1,0 +1,52 @@
+---
+layout: default
+title: Events
+---
+
+<section class="grid grid-1 grid-push-2 grid-fh grid-fix">
+  <div class="title">
+    <h2 class="title-headline">events.</h2>
+  </div>
+</section>
+
+<section class="grid grid-7 grid-push-3">
+  <div class="content-inner">
+    <h1 class="content-headline">our events<span class="red">.</span></h1>
+    <p class="content-intro">Planing an interessting meetup?
+      <a class="typeform-share link" href="https://morrisclay.typeform.com/to/ypQmwY" data-mode="popup" style="color:#FF0004;text-decoration:underline;"
+        data-hide-headers=true data-hide-footer=true target="_blank">Contact us! </a>
+      <script> (function () { var qs, js, q, s, d = document, gi = d.getElementById, ce = d.createElement, gt = d.getElementsByTagName, id = "typef_orm_share", b = "https://embed.typeform.com/"; if (!gi.call(d, id)) { js = ce.call(d, "script"); js.id = id; js.src = b + "embed.js"; q = gt.call(d, "script")[0]; q.parentNode.insertBefore(js, q) } })() </script>
+    </p>
+    <ul class="events-list">
+      {% capture nowunix %}{{'now' | date: '%s'}}{% endcapture %}
+      {% assign events = site.events | sort: 'date' | reverse %}
+      {% for event in events %}
+      {% capture eventtime %}{{event.date | date: '%s'}}{% endcapture %}
+      {% if eventtime < nowunix %}
+        <li class='events-list-item done'>
+      {% else %}
+        <li class='events-list-item'>
+      {% endif %}
+        <a class="events-link" href="{{ event.link }}" target="self">
+          <div class="events-calendar">
+            <div class="events-calendar-day">{{event.date | date: "%a"}}</div>
+            <div class="events-calendar-date">{{ event.date | date: "%d.%m." }}</div>
+          </div>
+          <div class="events-content">
+            <h2 class="events-headline">{{ event.headline }}</h2>
+            <ul class="events-meta clearfix">
+              <li class="events-meta-item">
+                <i class="a-icon a-calendar-60"></i> {{event.date | date: "%a"}}, {{ event.date | date: "%B" }} {{ event.date | date: "%d" }} {{ event.date | date:
+                "%Y" }}</li>
+              <li class="events-meta-item">
+                <i class="a-icon a-time-3"></i>{{event.time_span}}</li>
+              <li class="events-meta-item">
+                <i class="a-icon a-pin-3"></i>{{event.address}}</li>
+            </ul>
+          </div>
+        </a>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+</section>

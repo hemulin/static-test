@@ -1,0 +1,44 @@
+.button {
+	background: transparent;
+	border: $border-size solid $color-red;
+	color: $color-red;
+	display: inline-block;
+	font-size: $font-size-3;
+	font-weight: $font-weight-bold;
+	line-height: 1;
+	padding: $padding ($padding * 2) 13px;
+	position: relative;
+	text-align: center;
+	transition: all .1s;
+	-moz-transition: all .1s;
+	-webkit-transition: all .1s;
+
+	&:hover {
+		background: $color-red;
+		color: $color-white;
+		text-decoration: none;
+	}
+
+	&:disabled {
+		border: $border-size solid $color-red;
+		color: $color-red;
+		opacity: .5;
+		cursor: not-allowed;
+
+		&:hover {
+			border: $border-size solid $color-red;
+			color: $color-red;
+		}
+	}
+
+	&:focus {
+		background: $color-red;
+		color: $color-white;
+		text-decoration: none;
+		outline: none;
+	}
+
+	&.fullwidth {
+		width: 100%;
+	}
+}

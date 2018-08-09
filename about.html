@@ -1,0 +1,116 @@
+---
+layout: default
+title: About
+---
+<section class="grid grid-1 grid-push-2 grid-fh grid-fix">
+  <div class="title">
+    <h2 class="title-headline">about.</h2>
+  </div>
+</section>
+
+<section class="grid grid-7 grid-push-3">
+  <div class="content-inner">
+    <h1 class="content-headline">we are amatus<span class="red">.</span> </h1>
+    <div class="about">
+      <h2 class="about-subline">Partners</h2>
+      <div class="row">
+        {% assign teammemebers = site.teammemebers | where:"type","partner" | sort: 'order' %}
+        {% for teammember in teammemebers %}
+        <div class="col-sm-4">
+          <div class="about-item">
+            <div class="about-image-wrapper">
+              <a class="about-link" href="{{ teammember.link }}" title="Talk to Aaron" target="_blank">Talk to
+                <span>{{ teammember.first_name }}.</span>
+                <br />
+                <i class="a-icon a-tail-down"></i>
+              </a>
+              <img class="about-image" src="{{ teammember.image }}" alt="{{ teammember.full_name }}" width="" height="" />
+            </div>
+            <h3 class="about-name">{{ teammember.full_name }}</h3>
+            <h4 class="about-title">{{ teammember.position }}</h4>
+            <!-- <p class="about-description">Aaron Bichler is a highly ambitious and fully self-funded entrepreneur who builds up companies united under the amatus flag. While being visionary and a mentor of the particular ventures he doesn't interact operationally. He has (co-)founded several global companies such as the Blockchain World Conference.</p> -->
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+      <h2 class="about-subline">Associates</h2>
+      <div class="row">
+        {% assign teammemebers = site.teammemebers | where:"type","team" | sort: 'order' %}
+        {% for teammember in teammemebers %}
+        <div class="col-sm-4">
+          <div class="about-item">
+            <div class="about-image-wrapper">
+              <a class="about-link" href="{{ teammember.link }}" title="Talk to Aaron" target="_blank">Talk to
+                <span>{{ teammember.first_name }}.</span>
+                <br />
+                <i class="a-icon a-tail-down"></i>
+              </a>
+              <img class="about-image" src="{{ teammember.image }}" alt="{{ teammember.full_name }}" width="" height="" />
+            </div>
+            <h3 class="about-name">{{ teammember.full_name }}</h3>
+            <h4 class="about-title">{{ teammember.position }}</h4>
+            <!-- <p class="about-description">Aaron Bichler is a highly ambitious and fully self-funded entrepreneur who builds up companies united under the amatus flag. While being visionary and a mentor of the particular ventures he doesn't interact operationally. He has (co-)founded several global companies such as the Blockchain World Conference.</p> -->
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+      {% assign teammemebers = site.teammemebers | where:"type","entrepreneur" | sort: 'order' %}
+      {% if teammemebers.size > 0 %}
+      <h2 class="about-subline">Entrepreneurs</h2>
+      <div class="row">
+        {% assign teammemebers = site.teammemebers | where:"type","entrepreneur" | sort: 'order' %}
+        {% for teammember in teammemebers %}
+        <div class="col-sm-4">
+          <div class="about-item">
+            <div class="about-image-wrapper">
+              <a class="about-link" href="{{ teammember.link }}" title="Talk to Aaron" target="_blank">Talk to
+                <span>{{ teammember.first_name }}.</span>
+                <br />
+                <i class="a-icon a-tail-down"></i>
+              </a>
+              <img class="about-image" src="{{ teammember.image }}" alt="{{ teammember.full_name }}" width="" height="" />
+            </div>
+            <h3 class="about-name">{{ teammember.full_name }}</h3>
+            <h4 class="about-title">{{ teammember.position }}</h4>
+            <!-- <p class="about-description">Aaron Bichler is a highly ambitious and fully self-funded entrepreneur who builds up companies united under the amatus flag. While being visionary and a mentor of the particular ventures he doesn't interact operationally. He has (co-)founded several global companies such as the Blockchain World Conference.</p> -->
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+      {% endif %}
+
+      <div class="row">
+        <div class="col-sm-8">
+          <div class="about-item">
+            <div class="about-team">
+              <a class="about-team-button" href="jobs.html">Life is short.
+                <span>Join us!</span>
+                <br />
+                <i class="a-icon a-tail-down"></i>
+              </a>
+              <img class="about-team-image" src="assets/img/team/team.jpg" alt="The amatus. Team" width="" height="" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="about-mission">
+        <div class="row">
+          <div class="col-sm-4">
+            <h2 class="about-mission-headline">mission
+              <span class="red">.</span>
+            </h2>
+            <h4 class="about-mission-subline">Create socially meaningful impact through emerging technologies.</h4>
+          </div>
+          <div class="col-sm-8">
+            <p>We create initiatives to advance accessibility, through building and testing products in real-life scenarios.
+              Our values lie in promoting transparency, co-creation, research and community-oriented education.
+              <br /> We build alliances to encourage execution of new ideas, critical debate about the technology and products
+              which shape our lives.</p>
+            <p>Our multi-disciplinary research lens comes from fields such as game theory, social anthropology, data and economic
+              sciences and digital specialists, which helps us to look at ways of tackling the most relevant issues of today.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

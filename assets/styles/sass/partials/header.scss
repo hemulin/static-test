@@ -1,0 +1,35 @@
+.header {
+  background: $color-white;
+
+  @media(max-width:1100px) {
+    border-bottom: $border-size-small solid $color-border;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+  }
+
+  &-footer {
+    bottom: ($margin * 2);
+    display: block;
+    left: ($margin * 2);
+    position: absolute;
+
+    @media(max-width:1100px) {
+      display: none;
+    }
+
+    @media(max-height:500px) {
+      bottom: 0;
+      padding: ($margin * 2);
+			position: static;
+		}
+  }
+
+  .grid-inner {
+    @media(max-height:500px) {
+      min-height: auto;
+    }
+  }
+
+}

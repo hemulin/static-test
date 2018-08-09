@@ -1,0 +1,21 @@
+.carousel {
+
+	&-indicators {
+		li {
+			background: $color-white;
+			border: none;
+			width: 20px;
+			height: 20px;
+
+			&:hover {
+				background: $color-base;
+			}
+
+			&.active {
+				background: $color-red;
+				width: 20px;
+				height: 20px;
+			}
+		}
+	}
+}

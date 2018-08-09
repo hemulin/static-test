@@ -1,0 +1,209 @@
+.navigation {
+
+	.navbar {
+		border: none;
+		border-radius: 0;
+		margin: 0;
+		min-height: 0;
+
+		&-header {
+			padding: $padding ($padding * 2);
+
+			@media(min-width:768px) {
+				float: none;
+			}
+
+			@media(max-width:1100px) {
+				padding: 0;
+			}
+		}
+
+		&-brand {
+			display: block;
+			height: auto;
+			margin: $margin 0;
+			padding: 0;
+			width: auto;
+
+			@media(max-width:1100px) {
+				padding: 3px 0 3px $padding;
+			}
+
+			&:hover {
+				transform: scale(.95);
+				-moz-transform: scale(.95);
+				-webkit-transform: scale(.95);
+			}
+
+			img {
+				display: block;
+				height: 35px;
+				width: auto;
+
+				@media(max-width:1300px) {
+					height: 30px;
+				}
+
+				@media(max-width:1100px) {
+					height: 24px;
+				}
+
+			}
+		}
+
+		&-nav {
+			margin: $margin 0 0;
+
+			@media(min-width:768px) {
+				float: none;
+			}
+
+			@media(max-width:1100px) {
+				border-top: 1px solid $color-border-dark;
+				margin: 0;
+			}
+
+			& > li {
+				float: none;
+
+				@media(max-width:1100px) {
+					border-bottom: 1px solid $color-border-dark;
+				}
+
+				@media(min-width:1101px) {
+					&.active > a {
+						color: $color-red;
+
+						&:before {
+							background: $color-red;
+							content: '';
+							display: inline-block;
+							height: 1px;
+							left: 0;
+							position: absolute;
+							top: 21px;
+							width: 20px;
+						}
+
+						&:hover {
+							color: $color-red;
+						}
+					}
+				}
+
+				@media(max-width:1100px) {
+					&.active > a {
+						background: $color-red;
+						color: $color-white;
+
+						&:hover {
+							background: $color-red;
+							color: $color-white;
+						}
+					}
+				}
+
+				& > a {
+					color: $color-base;
+					display: inline-block;
+					font-family: 'Montserrat', sans-serif;
+					font-size: $font-size-4;
+					margin: 0;
+					padding: ($padding * .8) ($padding * 2);
+					position: relative;
+
+
+					@media(max-width:1100px) {
+						background: $color-base-light;
+						color: $color-black;
+						display: block;
+						font-size: $font-size-2;
+						margin: 0;
+						padding: $padding;
+					}
+
+					&:hover {
+						background: none;
+						color: $color-black;
+
+						@media(max-width:1100px) {
+							background: $color-base-semilight;
+							color: $color-black;
+						}
+					}
+
+					&:visited, &:focus, &:active {
+						background: none;
+					}
+				}
+			}
+		}
+
+		&-toggle {
+			float: right;
+			margin: 0;
+			padding: 22px 15px;
+
+			&.collapsed {
+				.icon-bar {
+					background: $color-black;
+				}
+			}
+
+			.icon-bar {
+				background: $color-red;
+				transition: all .1s;
+				-moz-transition: all .1s;
+				-webkit-transition: all .1s;
+			}
+		}
+
+		&-collapse {
+			padding: 0;
+
+			@media(max-width:1100px) {
+				background: $color-white;
+				border-top: none;
+				box-shadow: none;
+				margin: 0;
+				padding: 0;
+				position: relative;
+				z-index: 1100;
+			}
+		}
+	}
+
+	i {
+		position: absolute;
+		right: 30px;
+		top: 18px;
+
+		@media(max-width:1100px) {
+			right: 15px;
+			top: 18px;
+		}
+	}
+
+	/*-- Change breakpoint --*/
+	@media (max-width: 1100px) {
+		.navbar-header {
+			float: none;
+		}
+		.navbar-toggle {
+			display: inline-block;
+		}
+		.navbar-collapse.collapse {
+			display: none!important;
+		}
+		.navbar-nav {
+			& > li {
+				float: none;
+			}
+			float: none!important;
+		}
+		.collapse.in{
+			display:block !important;
+		}
+	}
+
+}
