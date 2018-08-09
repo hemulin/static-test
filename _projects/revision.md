@@ -3,8 +3,8 @@ layout: project
 internal_link: projects/revision
 external_link: https://www.revision.io/
 external_link_view: www.revision.io
-image: assets/img/projects/revision-content.jpg
-logo: assets/img/projects/revision.png
+image: /assets/img/projects/revision-content.jpg
+logo: /assets/img/projects/revision.png
 name: Revision
 description_outer: Conference Series and Platform for the Blockchain Community
 description_inner: 'Revision is an interdisciplinary leaders forum and festival for

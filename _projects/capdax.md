@@ -4,7 +4,7 @@ internal_link: projects/capdax
 external_link: https://capdax.com/
 external_link_view: www.capdax.com
 video_link: https://www.youtube.com/embed/RZMT8i2licg?rel=0&amp;showinfo=0
-logo: assets/img/projects/capdax.png
+logo: /assets/img/projects/capdax.png
 name: Capdax
 description_outer: Next-gen cryptocurrency exchange for beginner & sophisticated traders
 description_inner: Capdax is the next-generation cryptocurrency exchange for beginners
