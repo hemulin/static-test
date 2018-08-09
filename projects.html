@@ -17,9 +17,9 @@ title: Projects
       <div class="row">
         {% for project in site.projects %}
         <div class="col-sm-4">
-          <a class="projects-item" href="{{site.baseurl}}{{project.internal_link}}">
+          <a class="projects-item" href="{{project.internal_link | relative_url}}">
             <div class="projects-logo-wrapper">
-              <img class="projects-logo" src="{{site.baseurl}}{{project.logo}}" width="" height="" />
+              <img class="projects-logo" src="{{site.baseurl | relative_url }}{{project.logo}}" width="" height="" />
             </div>
             <h2 class="projects-item-title">{{project.name}}</h2>
             <p>{{project.description_outer}}</p>
