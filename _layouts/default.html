@@ -42,8 +42,10 @@
   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Tajawal:400,700" rel="stylesheet">
 
   <!--CSS-->
-  <link rel="stylesheet" href="{{ site.baseurl }}assets/styles/css/normalize.css">
-  <link rel="stylesheet" href="{{ site.baseurl }}assets/styles/css/master.css">
+  <link href="{{ "assets/styles/css/normalize.css" | relative_url }}" rel="stylesheet">
+  <link href="{{ "assets/styles/css/master.css" | relative_url }}" rel="stylesheet">
+  <!-- <link rel="stylesheet" href="{{ site.baseurl }}assets/styles/css/normalize.css"> -->
+  <!-- <link rel="stylesheet" href="{{ site.baseurl }}assets/styles/css/master.css"> -->
 
   <!--Javascript-->
   <script src="{{ site.baseurl }}assets/js/vendor/modernizr-2.8.3.min.js"></script>
