@@ -98,19 +98,19 @@
                   <a href="/" title="Home">home.</a>
                 </li>
                 <li {% if current[1] contains 'projects' %}class='active'{% endif %}>
-                  <a href="{{ site.baseurl }}projects" title="Projects">projects.</a>
+                  <a href="{{ "projects" | relative_url }}" title="Projects">projects.</a>
                 </li>
                 <li {% if current[1] contains 'jobs' %}class='active'{% endif %}>
-                  <a href="{{ site.baseurl }}jobs" title="Jobs">jobs.</a>
+                  <a href="{{ "jobs" | relative_url }}" title="Jobs">jobs.</a>
                 </li>
                 <li {% if current[1] contains 'events' %}class='active'{% endif %}>
-                  <a href="{{ site.baseurl }}events" title="Events">events.</a>
+                  <a href="{{ "events" | relative_url }}" title="Events">events.</a>
                 </li>
                 <li {% if current[1] contains 'about' %}class='active'{% endif %}>
-                  <a href="{{ site.baseurl }}about" title="About">about.</a>
+                  <a href="{{ "about" | relative_url }}" title="About">about.</a>
                 </li>
                 <li {% if current[1] contains 'blog' %}class='active'{% endif %}>
-                  <a href="{{ site.baseurl }}blog" title="Blog">blog.</a>
+                  <a href="{{ "blog" | relative_url }}" title="Blog">blog.</a>
                 </li>
               </ul>
             </div>
