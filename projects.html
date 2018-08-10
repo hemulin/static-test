@@ -19,7 +19,7 @@ title: Projects
         <div class="col-sm-4">
           <a class="projects-item" href="{{project.internal_link | relative_url}}">
             <div class="projects-logo-wrapper">
-              <img class="projects-logo" src="{{ project.logo }}" width="" height="" />
+              <img class="projects-logo" src="{{ project.logo | relative_url }}" width="" height="" />
             </div>
             <h2 class="projects-item-title">{{project.name}}</h2>
             <p>{{project.description_outer}}</p>
