@@ -10,6 +10,7 @@ headline: headline
 status: status
 contact_link: contact_link
 contact_name: contact_name
-logo: 'logo'
-image: 'image'
+logo: "/uploads/cat_face_glasses_thick_65455_1920x1080.jpg"
+image: "/uploads/1920x1080-2950099-hokusai-landscape-japan-wood-block___mixed-wallpapers.jpg"
+
 ---
