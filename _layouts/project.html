@@ -10,7 +10,7 @@ layout: default
 <section class="grid grid-3 grid-push-7 grid-fh grid-fix">
     <div class="content-inner projects-detail">
       <div class="projects-logo-wrapper">
-        <img class="projects-logo" src="{{ site.baseurl }}{{page.logo}}" width="" height="" />
+        <img class="projects-logo" src="{{page.logo | relative_url}}" width="" height="" />
       </div>
       <div class="projects-info">
         <h3 class="projects-title">{{page.name}}</h3>
